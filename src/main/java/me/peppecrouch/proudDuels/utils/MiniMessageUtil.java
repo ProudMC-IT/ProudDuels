@@ -7,7 +7,6 @@ public class MiniMessageUtil {
 
     private final MiniMessage miniMessage;
 
-
     public MiniMessageUtil(MiniMessage miniMessage) {
         this.miniMessage = miniMessage;
     }

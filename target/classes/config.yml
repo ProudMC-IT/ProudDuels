@@ -1,0 +1,6 @@
+messages:
+  no-console: "<red>Questo comando non può essere eseguito da console."
+  no-args: "<red>Digita: /duel <giocatore>"
+  duel-request: "<green>%player% ti ha invitato ad un duello! Digita /duel accept %player%"
+  fight-started: "<gold>Il round è iniziato!"
+  player-isDueling: "<red>Spiacenti, quel giocatore è già in un duello."
