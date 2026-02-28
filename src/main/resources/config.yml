@@ -1,9 +1,0 @@
-messages:
-  no-console: "<red>Questo comando non può essere eseguito da console."
-  no-args: "<red>Digita: /duel <giocatore>"
-  no-player: "<red>Questo giocatore non è online."
-  no-request: "<red>Non hai alcuna richiesta in sospeso da questo giocatore"
-  no-yourself: "<red>Non puoi duellare te stesso!"
-  duel-request: "<green> ti ha invitato ad un duello! Digita /duel accept "
-  fight-started: "<gold>Il round è iniziato!"
-  player-isDueling: "<red>Spiacenti, quel giocatore è già in un duello."

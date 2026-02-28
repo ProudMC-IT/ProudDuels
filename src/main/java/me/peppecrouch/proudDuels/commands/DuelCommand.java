@@ -15,7 +15,7 @@ import java.util.UUID;
 
 public class DuelCommand implements CommandExecutor {
 
-    HashMap<UUID, Boolean> isPending = new HashMap<>;
+    HashMap<UUID, Boolean> isPending = new HashMap<>();
     HashMap<UUID, UUID> inDuel = new HashMap<>();
     private final ProudDuels instance;
     private final MiniMessageUtil miniMessage;
@@ -43,13 +43,13 @@ public class DuelCommand implements CommandExecutor {
                 player.sendMessage(miniMessage.color("<red>Non puoi duellare te stesso"));
                 return true;
             }
-            if (args[0].equals("accept") && args[1].equals(player.getName())) {}
-            isPending.put(player.getUniqueId(), true);
-            inDuel.put(player.getUniqueId(), target.getUniqueId());
-            player.sendMessage(miniMessage.color(target + "<green> ha accettato la tua richiesta di duello!"));
-            target.sendMessage(miniMessage.color("<green>Hai accettato la richiesta di duello di " + player.getName() + "!"));
-
-
+            if (args[0].equals("accept") && args[1].equals(player.getName())) {
+                isPending.put(player.getUniqueId(), true);
+                inDuel.put(player.getUniqueId(), target.getUniqueId());
+                player.sendMessage(miniMessage.color(target + "<green> ha accettato la tua richiesta di duello!"));
+                target.sendMessage(miniMessage.color("<green>Hai accettato la richiesta di duello di " + player.getName() + "!"));
+                return true;
+            }
         return false;
     }
 }

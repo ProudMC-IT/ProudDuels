@@ -1,6 +1,7 @@
 package me.peppecrouch.proudDuels;
 
-import org.bukkit.plugin.java.JavaPlugin;
+import me.peppecrouch.proudDuels.commands.DuelCommand;
+import me.peppecrouch.proudDuels.utils.MiniMessageUtil;import net.kyori.adventure.text.minimessage.MiniMessage;import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ProudDuels extends JavaPlugin {
 
@@ -9,7 +10,7 @@ public final class ProudDuels extends JavaPlugin {
     @Override
     public void onEnable() {
         saveDefaultConfig();
-        getCommand("duel").setExecutor(new DuelCommand());
+        getCommand("duel").setExecutor(new DuelCommand(this, new MiniMessageUtil(MiniMessage.miniMessage())));
         getConfig().options().copyDefaults(true);
     }
 
