@@ -1,0 +1,8 @@
+name: ProudDuels
+version: '1.0-SNAPSHOT'
+main: me.peppecrouch.proudDuels.ProudDuels
+api-version: '1.21'
+commands:
+  duel:
+    description: allows you to duel a player
+
