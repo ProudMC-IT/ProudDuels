@@ -9,8 +9,9 @@ public final class ProudDuels extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        saveDefaultConfig();
         getCommand("duel").setExecutor(new DuelCommand());
-
+        getConfig().options().copyDefaults(true);
     }
 
     @Override
